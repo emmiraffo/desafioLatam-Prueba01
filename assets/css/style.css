@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+#carouselExampleControls{
+    top: 0;
+}
+
