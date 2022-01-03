@@ -8,12 +8,17 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed22ecc715.js" crossorigin="anonymous"></script>
     <title>Viajeros</title>
 </head>
 
-<body>
+<body  style="background-color: black;" >
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+
+
+    <nav id="navbar-example2" class="navbar fixed-top  navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#">
             <img src="./assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top" alt="">
             Viajes Chile
@@ -25,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                    <a class="dropdown-item" href="#one">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quines Somos</a>
+                    <a class="dropdown-item" href="#two">Quines Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="dropdown-item" href="#three">Destacados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="dropdown-item" href="#four">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -46,7 +51,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                <img src="/assets/img/carousel1.jpg" class="d-block w-100    " alt="...">
             </div>
             <div class="carousel-item">
                 <img src="/assets/img/carousel2.jpg" class="d-block w-100" alt="...">
@@ -65,19 +70,97 @@
         </button>
     </div>
 
-    <section>
+    <section class="container-fluid" id="two">
+        <div>
+            <h2>¿Quiénes Somos? </h2>
+        </div>
+        <div class="card-group ">
+            <div class="card ">
+                <i class="fas fa-plane"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est expedita dicta magni atque blanditiis
+                    alias rem beatae minima, ex at, quis doloremque suscipit earum sit voluptatem? Hic totam id
+                    recusandae.</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sit ex obcaecati, quas sunt
+                    officia, dolorem omnis in beatae sint laboriosam odio expedita. Maxime totam ut recusandae aperiam
+                    consequuntur vel.</p>
+                <i class="fas fa-map"></i>
+            </div>
+            <div class="card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat velit numquam quod consectetur,
+                    similique illo, atque alias odio magni totam distinctio molestiae earum soluta, consequatur quaerat
+                    officiis. Asperiores, recusandae iste?</p>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="container-fluid" id="three">
+        <h2>Destacados</h2>
+        <div class="card-group">
+
+        <div class="card bg-info" style="width: 18rem; ">
+            <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, esse est commodi fuga ipsum eius? Error nihil nesciunt ipsa dolore ea, tenetur aut deserunt repellat aliquid voluptatum, omnis exercitationem commodi!</p>
+            </div>
+    
+          </div>
+          <div class="card bg-info" style="width: 18rem;">
+            <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, esse est commodi fuga ipsum eius? Error nihil nesciunt ipsa dolore ea, tenetur aut deserunt repellat aliquid voluptatum, omnis exercitationem commodi!</p>
+            </div>
+    
+          </div>
+          <div class="card bg-info" style="width: 18rem;">
+            <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, esse est commodi fuga ipsum eius? Error nihil nesciunt ipsa dolore ea, tenetur aut deserunt repellat aliquid voluptatum, omnis exercitationem commodi!</p>
+            </div>
+    
+          </div>
+          <div class="card bg-info" style="width: 18rem;">
+            <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, esse est commodi fuga ipsum eius? Error nihil nesciunt ipsa dolore ea, tenetur aut deserunt repellat aliquid voluptatum, omnis exercitationem commodi!</p>
+            </div>
+    
+          </div>
+        </div>
+        
+    </section>
+
+    <section class="container" id="four">
+        <h2>Contacto</h2>
+        <div class="card-group">
+           </div>
+
+        
         
     </section>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
+   
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
